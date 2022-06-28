@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GZj-o9-UIq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Distance Item-->
+        <scene sceneID="XX5-Gj-8XR">
+            <objects>
+                <viewController title="Distance Item" id="khm-mF-0Px" customClass="DistanceViewController" customModule="QuantityMeasurementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GeS-Tr-Dd1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="gZ9-Dn-Cbp">
+                                <rect key="frame" x="10" y="147" width="394" height="358"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="nDW-16-Knq">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRi-qk-F55">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="34"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RlM-Tj-5PQ">
+                                                <rect key="frame" x="95" y="0.0" width="299" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="meterInput:" destination="khm-mF-0Px" eventType="editingChanged" id="fpi-3k-FfN"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="pIN-Zx-Ngz">
+                                        <rect key="frame" x="0.0" y="81" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWY-2j-vSv">
+                                                <rect key="frame" x="0.0" y="0.0" width="34.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f6W-aa-H5h">
+                                                <rect key="frame" x="89.5" y="0.0" width="304.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="footInput:" destination="khm-mF-0Px" eventType="editingChanged" id="sdc-Qs-HaO"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-IV-GmG">
+                                        <rect key="frame" x="0.0" y="162" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms3-nj-hGk">
+                                                <rect key="frame" x="0.0" y="0.0" width="34.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="57X-FD-2uF">
+                                                <rect key="frame" x="89.5" y="0.0" width="304.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="yardInput:" destination="khm-mF-0Px" eventType="editingChanged" id="kBX-WN-1sO"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="lOT-OY-EgO">
+                                        <rect key="frame" x="0.0" y="243" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KiloMetre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D2-9d-Xsj">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fd3-bV-mnI">
+                                                <rect key="frame" x="109" y="0.0" width="285" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="kiloMeterInput:" destination="khm-mF-0Px" eventType="editingChanged" id="7aQ-Gp-rRs"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="nAo-Jc-hve">
+                                        <rect key="frame" x="0.0" y="324" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="En3-6W-AUV">
+                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gd2-XV-QMU">
+                                                <rect key="frame" x="88.5" y="0.0" width="305.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="mileInput:" destination="khm-mF-0Px" eventType="editingChanged" id="YNu-2O-Q8F"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCY-Zf-kWj">
+                                <rect key="frame" x="0.0" y="63" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Distance" id="FIq-Ht-yJb"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7BV-n4-X5B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lCY-Zf-kWj" firstAttribute="top" secondItem="7BV-n4-X5B" secondAttribute="top" constant="19" id="1TN-Jc-G1N"/>
+                            <constraint firstItem="lCY-Zf-kWj" firstAttribute="leading" secondItem="7BV-n4-X5B" secondAttribute="leading" id="MGr-a5-hkZ"/>
+                            <constraint firstItem="lCY-Zf-kWj" firstAttribute="centerX" secondItem="gZ9-Dn-Cbp" secondAttribute="centerX" id="cFk-Sn-hrF"/>
+                            <constraint firstItem="7BV-n4-X5B" firstAttribute="trailing" secondItem="gZ9-Dn-Cbp" secondAttribute="trailing" constant="10" id="lGZ-pY-xmv"/>
+                            <constraint firstItem="gZ9-Dn-Cbp" firstAttribute="top" secondItem="lCY-Zf-kWj" secondAttribute="bottom" constant="40" id="tiR-SC-Pup"/>
+                            <constraint firstItem="gZ9-Dn-Cbp" firstAttribute="leading" secondItem="7BV-n4-X5B" secondAttribute="leading" constant="10" id="yJX-hi-DTt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Distance" id="QCL-Xj-3RO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="footTextField" destination="f6W-aa-H5h" id="Lgt-tZ-UWy"/>
+                        <outlet property="kiloMeterTextField" destination="Fd3-bV-mnI" id="5VU-zh-FWk"/>
+                        <outlet property="meterTextField" destination="RlM-Tj-5PQ" id="R67-PG-7ub"/>
+                        <outlet property="mileTextField" destination="gd2-XV-QMU" id="z7K-T4-oB2"/>
+                        <outlet property="yardTextField" destination="57X-FD-2uF" id="Jta-Kg-A8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1e-kj-6z3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284" y="672"/>
+        </scene>
+        <!--Temperature Item-->
+        <scene sceneID="TpZ-6t-Ipb">
+            <objects>
+                <viewController title="Temperature Item" id="Wmj-3i-jJk" customClass="TemperatureViewController" customModule="QuantityMeasurementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Eu-jc-AK7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="0mX-Q8-5eA">
+                                <rect key="frame" x="10" y="138" width="394" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="bvr-jh-6C9">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celcius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-Qb-v9l">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkF-9h-31r">
+                                                <rect key="frame" x="117" y="0.0" width="277" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="celciusInput:" destination="Wmj-3i-jJk" eventType="editingChanged" id="pLH-6e-3Y5"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-7y-cih">
+                                        <rect key="frame" x="0.0" y="83" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farhenite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opg-ds-cxU">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMw-7M-YS3">
+                                                <rect key="frame" x="124" y="0.0" width="270" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="farheniteInput:" destination="Wmj-3i-jJk" eventType="editingChanged" id="WPV-3h-Jvu"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="Mn1-Nf-va4">
+                                        <rect key="frame" x="0.0" y="166" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJd-0M-zaU">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlR-h0-yHc">
+                                                <rect key="frame" x="111.5" y="0.0" width="282.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="kelvinInput:" destination="Wmj-3i-jJk" eventType="editingChanged" id="Lbc-2L-JU6"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgZ-u7-4Ju">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Temperature" id="0N4-yI-4pK"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8iL-qh-z9D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8iL-qh-z9D" firstAttribute="trailing" secondItem="0mX-Q8-5eA" secondAttribute="trailing" constant="10" id="MJ7-4I-ojB"/>
+                            <constraint firstItem="GgZ-u7-4Ju" firstAttribute="top" secondItem="8iL-qh-z9D" secondAttribute="top" constant="10" id="Qrh-Y0-D4n"/>
+                            <constraint firstItem="0mX-Q8-5eA" firstAttribute="top" secondItem="GgZ-u7-4Ju" secondAttribute="bottom" constant="40" id="ZfL-9g-bma"/>
+                            <constraint firstItem="GgZ-u7-4Ju" firstAttribute="centerX" secondItem="0mX-Q8-5eA" secondAttribute="centerX" id="aKg-Su-Cvd"/>
+                            <constraint firstItem="GgZ-u7-4Ju" firstAttribute="leading" secondItem="8iL-qh-z9D" secondAttribute="leading" id="o2D-nl-V1B"/>
+                            <constraint firstItem="0mX-Q8-5eA" firstAttribute="leading" secondItem="8iL-qh-z9D" secondAttribute="leading" constant="10" id="o7q-wj-Hnm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Temperature" id="T71-km-LMD"/>
+                    <connections>
+                        <outlet property="celciusTextField" destination="lkF-9h-31r" id="TpS-xz-t4U"/>
+                        <outlet property="farheniteTextField" destination="QMw-7M-YS3" id="opS-Ey-uy8"/>
+                        <outlet property="kelvinTextField" destination="xlR-h0-yHc" id="pml-aG-kg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioQ-vf-VVp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="317"/>
+        </scene>
+        <!--Weight Item-->
+        <scene sceneID="xxU-Lv-Pmx">
+            <objects>
+                <viewController title="Weight Item" id="7wF-5T-eMJ" customClass="WeightViewController" customModule="QuantityMeasurementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pky-we-p8w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="8gm-60-Tkf">
+                                <rect key="frame" x="10" y="128" width="394" height="315"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="LxJ-ZF-2aw">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-hY-fnu">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-dN-mEW">
+                                                <rect key="frame" x="92" y="0.0" width="302" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="gramInput:" destination="7wF-5T-eMJ" eventType="editingChanged" id="FH7-ev-vYu"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Gd4-9i-Vxd">
+                                        <rect key="frame" x="0.0" y="93" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KiloGram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="892-aW-yeJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tIy-qu-fI1">
+                                                <rect key="frame" x="110" y="0.0" width="284" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="kilogramInput:" destination="7wF-5T-eMJ" eventType="editingChanged" id="SvZ-xT-Gob"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Mgc-y0-DLa">
+                                        <rect key="frame" x="0.0" y="187" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijz-cF-oji">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-kZ-YWQ">
+                                                <rect key="frame" x="89" y="0.0" width="305" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="poundInput:" destination="7wF-5T-eMJ" eventType="editingChanged" id="0cd-0E-Ri8"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-mv-Bpe">
+                                        <rect key="frame" x="0.0" y="281" width="394" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ounce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-o9-YSv">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mU-Wa-gcm">
+                                                <rect key="frame" x="90.5" y="0.0" width="303.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="ounceInput:" destination="7wF-5T-eMJ" eventType="editingChanged" id="cNp-ru-G0S"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gd4-9i-Vxd" firstAttribute="top" secondItem="8gm-60-Tkf" secondAttribute="top" constant="93" id="fkt-AH-V8F"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k91-ot-4EB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Weight" id="yEs-c4-teV"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4W5-Ai-iYA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k91-ot-4EB" firstAttribute="top" secondItem="4W5-Ai-iYA" secondAttribute="top" id="YND-iH-eXc"/>
+                            <constraint firstItem="8gm-60-Tkf" firstAttribute="leading" secondItem="4W5-Ai-iYA" secondAttribute="leading" constant="10" id="dwz-7I-c0l"/>
+                            <constraint firstAttribute="trailing" secondItem="k91-ot-4EB" secondAttribute="trailing" id="kYP-Tf-8ie"/>
+                            <constraint firstItem="8gm-60-Tkf" firstAttribute="top" secondItem="k91-ot-4EB" secondAttribute="bottom" constant="40" id="mxc-Gi-Upv"/>
+                            <constraint firstItem="4W5-Ai-iYA" firstAttribute="trailing" secondItem="8gm-60-Tkf" secondAttribute="trailing" constant="10" id="taS-lJ-7Yz"/>
+                            <constraint firstItem="8gm-60-Tkf" firstAttribute="centerX" secondItem="k91-ot-4EB" secondAttribute="centerX" id="vg5-CQ-tUZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weight" id="NJw-5z-Aie"/>
+                    <connections>
+                        <outlet property="gramTextField" destination="yyw-dN-mEW" id="C2S-Rl-SRm"/>
+                        <outlet property="kilogramTextField" destination="tIy-qu-fI1" id="5bY-Os-guM"/>
+                        <outlet property="ounceTextField" destination="5mU-Wa-gcm" id="zfz-vk-Agj"/>
+                        <outlet property="poundTextField" destination="Qmt-kZ-YWQ" id="fbY-SM-eZv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xu5-S2-XRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411.59420289855075" y="-328.125"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dxn-fJ-08Y">
+            <objects>
+                <tabBarController id="GZj-o9-UIq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oka-sZ-gdt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7wF-5T-eMJ" kind="relationship" relationship="viewControllers" id="0xp-1z-ANr"/>
+                        <segue destination="Wmj-3i-jJk" kind="relationship" relationship="viewControllers" id="PTh-ob-60w"/>
+                        <segue destination="khm-mF-0Px" kind="relationship" relationship="viewControllers" id="fX4-gs-NIl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwG-Ud-3hS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
